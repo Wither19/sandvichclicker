@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<title>Online HTML Editor</title>
+<head>
+  <style>
+    div, div #clicks {
+      background-color: rgba(27, 27, 27, 0.6);
+      color: lightgray;
+      font-family: sans;
+      text-align: center;
+    }
+    #sandvich {
+      width: 158px;
+      user-select: none;
+      cursor: pointer;
+    }
+    #title {
+      font-size: 64px;
+      text-align: center;
+      font-family: trebuchet ms;
+    }
+  </style>
+</head>
+<body>
+  <div id="title">Sandvich Clicker</div>
+  <div><h1 id="clicks">0 Sandviches</h1></div>
+  <center><img id="sandvich" src="https://media.tenor.com/tucmrFO9bcAAAAAi/sandvich-sandwich.gif" onClick="clickME()"></center>
+<script>
+ var clicks = 0;
+    function clickME() {
+    document.getElementById("clicks").innerHTML = clicks + " Sandviches";
+    clicks += 1;
+</script>
+</body>
+</html>
