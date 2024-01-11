@@ -24,12 +24,12 @@
 <body>
   <div id="title">Sandvich Clicker</div>
   <div><h1 id="clicks">0 Sandviches</h1></div>
-  <center><img id="sandvich" src="https://media.tenor.com/tucmrFO9bcAAAAAi/sandvich-sandwich.gif" onClick="clickME()"></center>
+  <center><img id="sandvich" src="https://media.tenor.com/tucmrFO9bcAAAAAi/sandvich-sandwich.gif" onClick="sandvich()"></center>
 <script>
  var clicks = 0;
-    function clickME() {
-    document.getElementById("clicks").innerHTML = clicks + " Sandviches";
+function sandvich() {
     clicks += 1;
+    document.getElementById("clicks").innerHTML = clicks + " Sandviches";
 </script>
 </body>
 </html>
