@@ -2,6 +2,7 @@
 <html>
 <title>Online HTML Editor</title>
 <head>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
   <style>
     div, div #clicks {
       background-color: rgba(27, 27, 27, 0.6);
@@ -24,12 +25,13 @@
 <body>
   <div id="title">Sandvich Clicker</div>
   <div><h1 id="clicks">0 Sandviches</h1></div>
-  <center><img id="sandvich" src="https://media.tenor.com/tucmrFO9bcAAAAAi/sandvich-sandwich.gif" onClick="sandvich()"></center>
+  <center><img id="sandvich" src="https://media.tenor.com/tucmrFO9bcAAAAAi/sandvich-sandwich.gif"></center>
 <script>
  var clicks = 0;
-function sandvich() {
+ $("#sandvich").click(function(){
     clicks += 1;
-    document.getElementById("clicks").innerHTML = clicks + " Sandviches";
+    $("#clicks").html(clicks + " Sandviches")
+ });
 </script>
 </body>
 </html>
